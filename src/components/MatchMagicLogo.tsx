@@ -16,7 +16,7 @@ export default function MatchMagicLogo({
   linked = false,
 }: MatchMagicLogoProps) {
   const isHero = variant === "hero";
-  const width = isHero ? 320 : 140;
+  const width = isHero ? 480 : 200;
   const height = Math.round(width / LOGO_ASPECT);
 
   const image = (
@@ -27,7 +27,7 @@ export default function MatchMagicLogo({
       height={height}
       priority={priority}
       className={isHero ? "matchmagic-logo matchmagic-logo--hero" : "matchmagic-logo matchmagic-logo--header"}
-      sizes={isHero ? "(max-width: 768px) 85vw, 320px" : "140px"}
+      sizes={isHero ? "(max-width: 768px) 92vw, 480px" : "200px"}
     />
   );
 
