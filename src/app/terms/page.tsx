@@ -131,10 +131,6 @@ export default function TermsPage() {
               matchmagic.studio@gmail.com
             </a>
           </p>
-
-          <p className="prose__copyright">
-            &copy; 2026 MatchMagic Studio. All rights reserved.
-          </p>
     </PageDocument>
   );
 }
