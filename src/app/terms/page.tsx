@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageDocument from "@/components/PageDocument";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
@@ -8,14 +9,7 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <>
-      <header className="page-header">
-        <div className="container">
-          <h1 className="page-header__title">Terms of Use</h1>
-        </div>
-      </header>
-      <div className="page-content">
-        <article className="container prose">
+    <PageDocument title="Terms of Use">
           <p className="prose__effective-date">
             <strong>Effective Date:</strong> August 13, 2026
           </p>
@@ -141,8 +135,6 @@ export default function TermsPage() {
           <p className="prose__copyright">
             &copy; 2026 MatchMagic Studio. All rights reserved.
           </p>
-        </article>
-      </div>
-    </>
+    </PageDocument>
   );
 }

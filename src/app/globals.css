@@ -671,14 +671,18 @@ button:focus-visible {
 }
 
 /* Legal / content pages */
-.page-header {
-  padding-block: var(--space-lg) var(--space-md);
-  border-bottom: 1px solid var(--color-row-divider);
-  background: var(--color-white);
+.page-document {
+  padding-block: var(--space-lg);
+  background: var(--color-cream);
 }
 
-.page-header__title {
-  margin: 0;
+.page-document__inner {
+  text-align: left;
+}
+
+.page-document__title {
+  margin: 0 0 1.5rem;
+  padding: 0;
   font-size: clamp(1.75rem, 4vw, 2.25rem);
   font-weight: 700;
   color: var(--color-brand-purple);
@@ -686,17 +690,10 @@ button:focus-visible {
   text-align: left;
 }
 
-.page-content {
-  padding-block: var(--space-lg);
-}
-
-.page-content .container {
-  text-align: left;
-}
-
 .prose {
   max-width: 38rem;
-  margin-inline: 0;
+  margin: 0;
+  padding: 0;
   text-align: left;
 }
 
@@ -765,6 +762,7 @@ button:focus-visible {
   font-size: 1rem;
   font-weight: 400;
   color: var(--color-muted-text);
+  list-style-position: outside;
 }
 
 .prose li {

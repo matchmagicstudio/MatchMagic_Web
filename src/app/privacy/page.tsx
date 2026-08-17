@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageDocument from "@/components/PageDocument";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -8,14 +9,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <>
-      <header className="page-header">
-        <div className="container">
-          <h1 className="page-header__title">Privacy Policy</h1>
-        </div>
-      </header>
-      <div className="page-content">
-        <article className="container prose">
+    <PageDocument title="Privacy Policy">
           <p className="prose__effective-date">
             <strong>Effective Date:</strong> August 13, 2026
           </p>
@@ -197,8 +191,6 @@ export default function PrivacyPage() {
           <p className="prose__copyright">
             &copy; 2026 MatchMagic Studio. All rights reserved.
           </p>
-        </article>
-      </div>
-    </>
+    </PageDocument>
   );
 }
