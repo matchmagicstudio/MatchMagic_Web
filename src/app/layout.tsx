@@ -1,15 +1,7 @@
 import type { Metadata } from "next";
-import { Fredoka } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
-
-const fredoka = Fredoka({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  variable: "--font-fredoka",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: {
@@ -32,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fredoka.variable}>
+      <body>
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>

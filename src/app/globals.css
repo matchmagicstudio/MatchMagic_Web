@@ -23,8 +23,8 @@
   --color-glow-core: #ffe8b8;
   --color-glow-mid: #fff0d4;
 
-  --font-sans: var(--font-fredoka), system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 
   --radius-button: 20px;
   --radius-home-cta: 14px;
