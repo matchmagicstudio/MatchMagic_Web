@@ -693,17 +693,27 @@ button:focus-visible {
 main:has(.support-section:last-child) {
   display: flex;
   flex-direction: column;
+  background: var(--color-panel);
 }
 
 .support-section.section--alt {
   flex: 1;
+  background: var(--color-panel);
+  background-image: none;
 }
 
 main:has(.support-section:last-child) + .site-footer {
   margin-top: 0;
+  padding-top: 0;
+  border: none;
+  box-shadow: none;
 }
 
 main:has(.support-section:last-child) + .site-footer .site-footer__wave-wrap {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
   background: var(--color-panel);
 }
 
