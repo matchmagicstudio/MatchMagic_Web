@@ -32,13 +32,10 @@ export default function Hero() {
           type="button"
           className="app-store-badge"
           aria-disabled="true"
-          aria-label="Coming Soon on the App Store"
+          aria-label="Coming Soon to the App Store"
         >
           <AppStoreIcon />
-          <span className="app-store-badge__label">
-            <span className="app-store-badge__line">Coming Soon</span>
-            <span className="app-store-badge__line">on the App Store</span>
-          </span>
+          <span>Coming Soon to the App Store</span>
         </button>
       </div>
     </section>
