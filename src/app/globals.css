@@ -585,14 +585,14 @@ button:focus-visible {
 
 /* Support section */
 .support-section {
-  text-align: center;
   background:
     radial-gradient(ellipse 45% 30% at 80% 30%, rgba(141, 125, 184, 0.08) 0%, transparent 60%),
     var(--color-cream);
 }
 
-.support-section .section__heading {
-  margin-bottom: 1.75rem;
+.support-content {
+  max-width: 38rem;
+  margin-inline: 0;
 }
 
 .support-section p {
@@ -601,8 +601,6 @@ button:focus-visible {
   font-weight: 500;
   font-size: 1.0625rem;
   line-height: 1.75;
-  max-width: 32rem;
-  margin-inline: auto;
 }
 
 .support-section__link {
