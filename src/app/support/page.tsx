@@ -15,8 +15,8 @@ export default function SupportPage() {
         </div>
       </header>
       <div className="page-content">
-        <div className="container prose">
-          <p>Need help with MatchMagic?</p>
+        <article className="container prose">
+          <p className="prose__intro">Need help with MatchMagic?</p>
           <p>
             Whether you&apos;ve found a bug, have a question, or would like to
             share feedback, we&apos;d love to hear from you.
@@ -41,7 +41,7 @@ export default function SupportPage() {
             <li>MatchMagic app version</li>
             <li>Brief description of the issue</li>
           </ul>
-        </div>
+        </article>
       </div>
     </>
   );
