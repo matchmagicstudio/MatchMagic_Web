@@ -22,8 +22,7 @@ export default function SupportPage() {
         <div className="support-page__content">
           <h1 className="support-page__title">How can we help?</h1>
           <p className="support-page__lead">
-            Fill out the form below and we&apos;ll get back to you as soon as
-            possible.
+            Fill out the form below and we&apos;ll get back to you as soon as possible.
           </p>
           <SupportContactForm />
         </div>

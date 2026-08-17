@@ -5,7 +5,7 @@ const LOGO_PATH = "/assets/matchmagic-logo.png";
 const LOGO_ASPECT = 1024 / 750;
 
 type MatchMagicLogoProps = {
-  variant?: "header" | "hero";
+  variant?: "header" | "hero" | "footer";
   priority?: boolean;
   linked?: boolean;
 };
@@ -16,7 +16,8 @@ export default function MatchMagicLogo({
   linked = false,
 }: MatchMagicLogoProps) {
   const isHero = variant === "hero";
-  const width = isHero ? 480 : 200;
+  const isFooter = variant === "footer";
+  const width = isHero ? 480 : isFooter ? 168 : 200;
   const height = Math.round(width / LOGO_ASPECT);
 
   const image = (
@@ -26,8 +27,20 @@ export default function MatchMagicLogo({
       width={width}
       height={height}
       priority={priority}
-      className={isHero ? "matchmagic-logo matchmagic-logo--hero" : "matchmagic-logo matchmagic-logo--header"}
-      sizes={isHero ? "(max-width: 768px) 92vw, 480px" : "200px"}
+      className={
+        isHero
+          ? "matchmagic-logo matchmagic-logo--hero"
+          : isFooter
+            ? "matchmagic-logo matchmagic-logo--footer"
+            : "matchmagic-logo matchmagic-logo--header"
+      }
+      sizes={
+        isHero
+          ? "(max-width: 768px) 92vw, 480px"
+          : isFooter
+            ? "168px"
+            : "200px"
+      }
     />
   );
 
