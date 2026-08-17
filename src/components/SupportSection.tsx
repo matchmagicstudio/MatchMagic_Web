@@ -53,22 +53,21 @@ export default function SupportSection() {
             Questions, feedback, support? We&apos;d love to hear from you.
           </p>
           <div className="support-cards">
-            <a
-              href="mailto:matchmagic.studio@gmail.com"
-              className="support-card"
-              aria-label="Email MatchMagic Studio at matchmagic.studio@gmail.com"
-            >
+            <article className="support-card support-card--email">
               <div className="support-card__icon">
                 <EnvelopeIcon />
               </div>
               <p className="support-card__title">
                 Email:{" "}
-                <span className="support-card__email">
+                <a
+                  href="mailto:matchmagic.studio@gmail.com"
+                  className="support-card__email-link"
+                >
                   matchmagic.studio@gmail.com
-                </span>
+                </a>
               </p>
               <p className="support-card__hint">Email us directly</p>
-            </a>
+            </article>
             <span className="support-cards__or" aria-hidden="true">
               or
             </span>
