@@ -24,6 +24,12 @@ export default function SupportPage() {
           <p className="support-page__lead">
             Fill out the form below and we&apos;ll get back to you as soon as possible.
           </p>
+          <p className="support-page__email">
+            Or email us directly:{" "}
+            <a href="mailto:matchmagic.studio@gmail.com" aria-label="Email MatchMagic Studio">
+              matchmagic.studio@gmail.com
+            </a>
+          </p>
           <SupportContactForm />
         </div>
       </div>

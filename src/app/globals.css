@@ -638,13 +638,15 @@ button:focus-visible {
 }
 
 .magic-wand-illustration {
-  width: min(100%, 18rem);
+  display: block;
+  width: min(100%, 200px);
   height: auto;
+  object-fit: contain;
 }
 
 @media (min-width: 768px) {
   .magic-wand-illustration {
-    width: 20rem;
+    width: 290px;
   }
 }
 
@@ -733,15 +735,27 @@ button:focus-visible {
   line-height: 1.45;
 }
 
-.support-card__email {
+.support-card__email-link {
   font-weight: 700;
-  color: var(--color-brand-purple);
+  color: var(--color-primary);
+  text-decoration: none;
   word-break: break-word;
+  transition: color 0.15s ease, text-decoration 0.15s ease;
 }
 
-.support-card--email:hover .support-card__email {
+.support-card__email-link:hover {
   color: var(--color-primary-border);
   text-decoration: underline;
+}
+
+.support-card--email {
+  cursor: default;
+}
+
+.support-card--email:hover {
+  transform: none;
+  box-shadow: var(--shadow-card);
+  border-color: var(--color-border);
 }
 
 .support-card__hint {
@@ -807,6 +821,26 @@ button:focus-visible {
   .support-page__lead {
     white-space: nowrap;
   }
+}
+
+.support-page__email {
+  margin: -1rem 0 2rem;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--color-muted-text);
+  line-height: 1.75;
+  text-align: center;
+}
+
+.support-page__email a {
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.support-page__email a:hover {
+  color: var(--color-primary-border);
+  text-decoration: underline;
 }
 
 .support-form__field {

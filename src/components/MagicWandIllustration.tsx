@@ -1,20 +1,18 @@
 import Image from "next/image";
 
-const WAND_PATH = "/assets/magic-wand-illustration.png";
-const WAND_ASPECT = 986 / 1112;
+const WAND_PATH = "/assets/magic-wand-standalone.png";
+const WAND_WIDTH = 1382;
+const WAND_HEIGHT = 1900;
 
 export default function MagicWandIllustration() {
-  const width = 320;
-  const height = Math.round(width / WAND_ASPECT);
-
   return (
     <Image
       src={WAND_PATH}
       alt=""
-      width={width}
-      height={height}
+      width={WAND_WIDTH}
+      height={WAND_HEIGHT}
       className="magic-wand-illustration"
-      sizes="(max-width: 767px) 72vw, 320px"
+      sizes="(max-width: 767px) 200px, 290px"
       aria-hidden="true"
     />
   );
