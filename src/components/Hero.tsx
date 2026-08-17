@@ -22,10 +22,10 @@ export default function Hero() {
         <h1 id="hero-heading" className="hero__brand">
           <MatchMagicLogo variant="hero" priority />
         </h1>
-        <p className="hero__tagline">Learning through play.</p>
+        <p className="hero__tagline">Learning through play!</p>
         <p className="hero__description">
           A playful matching game designed for children ages 2–6 to strengthen
-          memory, attention, vocabulary, and early thinking skills.
+          memory, attention, vocabulary, and early thinking&nbsp;skills.
         </p>
         <button
           type="button"
