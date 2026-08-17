@@ -327,6 +327,20 @@ button:focus-visible {
   line-height: 1.75;
 }
 
+.hero__description-break {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hero__description {
+    max-width: 36rem;
+  }
+
+  .hero__description-break {
+    display: block;
+  }
+}
+
 .app-store-badge {
   display: inline-flex;
   align-items: center;
