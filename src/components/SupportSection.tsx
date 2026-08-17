@@ -11,18 +11,17 @@ export default function SupportSection() {
           Need Help?
         </h2>
         <div className="support-content">
-          <p>
-            Questions, feedback, or technical issues? We&apos;d be happy to hear
-            from you.
+          <p className="support-section__lead">
+            Questions, feedback, or support?
           </p>
-          <p>
-            Email:{" "}
-            <a href="mailto:matchmagic.studio@gmail.com">
-              matchmagic.studio@gmail.com
-            </a>
-          </p>
+          <a
+            href="mailto:matchmagic.studio@gmail.com"
+            className="support-section__email"
+          >
+            matchmagic.studio@gmail.com
+          </a>
           <Link href="/support" className="support-section__link">
-            Visit our support page
+            Contact Support →
           </Link>
         </div>
       </div>

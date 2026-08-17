@@ -175,14 +175,23 @@ button:focus-visible {
 
 .site-nav {
   display: flex;
-  gap: var(--space-md);
   align-items: center;
   flex-shrink: 0;
 }
 
+.site-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .site-nav a {
-  font-size: 1.0625rem;
-  font-weight: 700;
+  font-size: 0.9375rem;
+  font-weight: 500;
   color: var(--color-muted-text);
   text-decoration: none;
   transition: color 0.15s ease;
@@ -191,6 +200,16 @@ button:focus-visible {
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
   color: var(--color-primary);
+}
+
+@media (max-width: 640px) {
+  .site-nav__list {
+    gap: 0.5rem 1rem;
+  }
+
+  .site-nav a {
+    font-size: 0.875rem;
+  }
 }
 
 /* Playful decorations */
@@ -611,19 +630,42 @@ button:focus-visible {
   margin-inline: 0;
 }
 
-.support-section p {
-  margin: 0 0 0.875rem;
+.support-section__lead {
+  margin: 0 0 1.25rem;
   color: var(--color-muted-text);
   font-weight: 500;
   font-size: 1.0625rem;
   line-height: 1.75;
 }
 
+.support-section__email {
+  display: inline-block;
+  margin: 0 0 1.5rem;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.15s ease, text-decoration 0.15s ease;
+}
+
+.support-section__email:hover {
+  color: var(--color-primary-border);
+  text-decoration: underline;
+}
+
 .support-section__link {
   display: inline-block;
-  margin-top: 1.375rem;
+  margin-top: 0.25rem;
   font-size: 1.0625rem;
-  font-weight: 700;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.15s ease, text-decoration 0.15s ease;
+}
+
+.support-section__link:hover {
+  color: var(--color-primary-border);
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -678,6 +720,21 @@ button:focus-visible {
 
 .page-document__inner {
   text-align: left;
+}
+
+.page-document__back {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.15s ease, text-decoration 0.15s ease;
+}
+
+.page-document__back:hover {
+  color: var(--color-primary-border);
+  text-decoration: underline;
 }
 
 .page-document__title {
