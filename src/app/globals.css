@@ -176,7 +176,7 @@ button:focus-visible {
 .site-header__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   min-height: var(--header-height);
   gap: var(--space-md);
 }
@@ -621,7 +621,7 @@ button:focus-visible {
   margin-inline: 0;
 }
 
-.about-illustration {
+.about-logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -630,24 +630,26 @@ button:focus-visible {
 }
 
 @media (min-width: 768px) {
-  .about-illustration {
+  .about-logo {
     justify-content: flex-end;
     margin-inline: 0;
     max-width: none;
   }
 }
 
-.magic-wand-illustration {
-  display: block;
+.matchmagic-logo--about {
   width: min(100%, 200px);
   height: auto;
-  object-fit: contain;
 }
 
 @media (min-width: 768px) {
-  .magic-wand-illustration {
-    width: 290px;
+  .matchmagic-logo--about {
+    width: 260px;
   }
+}
+
+.about-section {
+  background: var(--color-cream);
 }
 
 .about-content p {
@@ -666,11 +668,6 @@ button:focus-visible {
   margin-top: 1.75rem;
   font-weight: 700;
   color: var(--color-brand-purple);
-}
-
-/* Support section */
-.support-section {
-  background: var(--color-cream);
 }
 
 .support-content {

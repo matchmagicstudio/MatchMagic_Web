@@ -41,7 +41,7 @@ function HeadsetIcon() {
 export default function SupportSection() {
   return (
     <section
-      className="section support-section"
+      className="section section--alt support-section"
       aria-labelledby="support-heading"
     >
       <div className="container">

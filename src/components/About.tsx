@@ -1,4 +1,4 @@
-import MagicWandIllustration from "@/components/MagicWandIllustration";
+import MatchMagicLogo from "@/components/MatchMagicLogo";
 
 export default function About() {
   return (
@@ -20,8 +20,8 @@ export default function About() {
             </p>
             <p className="developer">Developed by MatchMagic Studio.</p>
           </div>
-          <div className="about-illustration">
-            <MagicWandIllustration />
+          <div className="about-logo">
+            <MatchMagicLogo variant="about" />
           </div>
         </div>
       </div>
