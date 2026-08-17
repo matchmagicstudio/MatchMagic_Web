@@ -41,7 +41,7 @@ function HeadsetIcon() {
 export default function SupportSection() {
   return (
     <section
-      className="section section--alt support-section"
+      className="section support-section"
       aria-labelledby="support-heading"
     >
       <div className="container">
@@ -53,21 +53,20 @@ export default function SupportSection() {
             Questions, feedback, support? We&apos;d love to hear from you.
           </p>
           <div className="support-cards">
-            <article className="support-card support-card--email">
+            <a
+              href="mailto:matchmagic.studio@gmail.com"
+              className="support-card support-card--email"
+              aria-label="Email MatchMagic Studio at matchmagic.studio@gmail.com"
+            >
               <div className="support-card__icon">
                 <EnvelopeIcon />
               </div>
               <p className="support-card__title">
                 Email:{" "}
-                <a
-                  href="mailto:matchmagic.studio@gmail.com"
-                  className="support-card__email-link"
-                >
-                  matchmagic.studio@gmail.com
-                </a>
+                <span className="support-card__email">matchmagic.studio@gmail.com</span>
               </p>
               <p className="support-card__hint">Email us directly</p>
-            </article>
+            </a>
             <span className="support-cards__or" aria-hidden="true">
               or
             </span>

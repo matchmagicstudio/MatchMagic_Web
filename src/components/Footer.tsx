@@ -1,5 +1,4 @@
 import Link from "next/link";
-import MatchMagicLogo from "@/components/MatchMagicLogo";
 import FooterWave from "@/components/FooterWave";
 
 const footerLinks = [
@@ -14,7 +13,6 @@ export default function Footer() {
       <FooterWave />
       <div className="site-footer__body">
         <div className="container site-footer__inner">
-          <MatchMagicLogo variant="footer" />
           <nav aria-label="Footer navigation">
             <ul className="site-footer__links">
               {footerLinks.map(({ href, label }) => (
