@@ -18,7 +18,7 @@ export default function MatchMagicLogo({
   const isHero = variant === "hero";
   const isFooter = variant === "footer";
   const isAbout = variant === "about";
-  const width = isHero ? 480 : isFooter ? 168 : isAbout ? 260 : 200;
+  const width = isHero ? 480 : isFooter ? 168 : isAbout ? 400 : 200;
   const height = Math.round(width / LOGO_ASPECT);
 
   const image = (
@@ -43,7 +43,7 @@ export default function MatchMagicLogo({
           : isFooter
             ? "168px"
             : isAbout
-              ? "(max-width: 767px) 200px, 260px"
+              ? "(max-width: 767px) 240px, 400px"
               : "200px"
       }
     />
