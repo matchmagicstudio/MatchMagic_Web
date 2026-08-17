@@ -690,6 +690,23 @@ button:focus-visible {
   padding-bottom: 0;
 }
 
+main:has(.support-section:last-child) {
+  display: flex;
+  flex-direction: column;
+}
+
+.support-section.section--alt {
+  flex: 1;
+}
+
+main:has(.support-section:last-child) + .site-footer {
+  margin-top: 0;
+}
+
+main:has(.support-section:last-child) + .site-footer .site-footer__wave-wrap {
+  background: var(--color-panel);
+}
+
 .support-cards {
   display: flex;
   flex-wrap: wrap;
@@ -960,10 +977,6 @@ button:focus-visible {
   line-height: 0;
   color: var(--color-peach);
   background: var(--color-cream);
-}
-
-main:has(.support-section:last-child) + .site-footer .site-footer__wave-wrap {
-  background: var(--section-alt-bg);
 }
 
 .site-footer__wave {
