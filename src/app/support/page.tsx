@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import PageDocument from "@/components/PageDocument";
+import Link from "next/link";
+import SupportContactForm from "@/components/SupportContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Support",
@@ -9,32 +10,24 @@ export const metadata: Metadata = {
 
 export default function SupportPage() {
   return (
-    <PageDocument title="Contact Support">
-      <p className="prose__intro">Need help with MatchMagic?</p>
-      <p>
-        Whether you&apos;ve found a bug, have a question, or would like to
-        share feedback, we&apos;d love to hear from you.
-      </p>
-
-      <h2>MatchMagic Studio</h2>
-      <p>
-        Email:{" "}
-        <a
-          href="mailto:matchmagic.studio@gmail.com"
-          className="support-email"
+    <div className="page-document support-page">
+      <div className="container page-document__inner">
+        <Link
+          href="/"
+          className="page-document__back"
+          aria-label="Return to MatchMagic homepage"
         >
-          matchmagic.studio@gmail.com
-        </a>
-      </p>
-      <p>We aim to respond within 2–3 business days.</p>
-
-      <h2>Helpful information to include</h2>
-      <ul className="support-list">
-        <li>Device model</li>
-        <li>Operating system version</li>
-        <li>MatchMagic app version</li>
-        <li>Brief description of the issue</li>
-      </ul>
-    </PageDocument>
+          ← MatchMagic
+        </Link>
+        <div className="support-page__content">
+          <h1 className="support-page__title">How can we help?</h1>
+          <p className="support-page__lead">
+            Fill out the form below and we&apos;ll get back to you as soon as
+            possible.
+          </p>
+          <SupportContactForm />
+        </div>
+      </div>
+    </div>
   );
 }
