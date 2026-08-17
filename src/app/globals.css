@@ -440,6 +440,20 @@ button:focus-visible {
   flex-shrink: 0;
 }
 
+.app-store-badge__label {
+  display: inline;
+  text-align: center;
+}
+
+.app-store-badge__line {
+  display: inline;
+  white-space: nowrap;
+}
+
+.app-store-badge__line:first-child::after {
+  content: " ";
+}
+
 .app-store-badge:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-button-hover);
@@ -472,10 +486,28 @@ button:focus-visible {
 
 @media (max-width: 767px) {
   .app-store-badge {
-    width: 87%;
-    max-width: 22rem;
-    min-height: 2.75rem;
+    width: 92%;
+    max-width: none;
+    min-height: 3.375rem;
+    padding: 0.8125rem 0.625rem;
+    font-size: 1rem;
+    align-items: center;
     margin-inline: auto;
+  }
+
+  .app-store-badge__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+  }
+
+  .app-store-badge__line {
+    display: block;
+  }
+
+  .app-store-badge__line:first-child::after {
+    content: none;
   }
 }
 
