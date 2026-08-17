@@ -842,26 +842,6 @@ main:has(.support-section:last-child) + .site-footer .site-footer__wave-wrap {
   }
 }
 
-.support-page__email {
-  margin: -1rem 0 2rem;
-  font-size: 1.0625rem;
-  font-weight: 500;
-  color: var(--color-muted-text);
-  line-height: 1.75;
-  text-align: center;
-}
-
-.support-page__email a {
-  font-weight: 600;
-  color: var(--color-primary);
-  text-decoration: none;
-}
-
-.support-page__email a:hover {
-  color: var(--color-primary-border);
-  text-decoration: underline;
-}
-
 .support-form__field {
   margin-bottom: 1.25rem;
 }
