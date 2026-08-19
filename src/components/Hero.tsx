@@ -24,7 +24,7 @@ export default function Hero() {
         </h1>
         <p className="hero__tagline">Learning through play!</p>
         <p className="hero__description">
-          A playful matching game designed for children ages 2–6 to
+          A playful matching game designed for children ages 2–6 to{" "}
           <br className="hero__description-break" />
           strengthen memory, attention, vocabulary, and early thinking&nbsp;skills.
         </p>
