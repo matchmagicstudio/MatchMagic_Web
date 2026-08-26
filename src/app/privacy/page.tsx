@@ -11,7 +11,7 @@ export default function PrivacyPage() {
   return (
     <PageDocument title="Privacy Policy">
           <p className="prose__effective-date">
-            <strong>Effective Date:</strong> August 13, 2026
+            <strong>Effective Date:</strong> August 25, 2026
           </p>
 
           <p>
@@ -66,16 +66,17 @@ export default function PrivacyPage() {
 
           <h2>2. Information Stored on Your Device</h2>
           <p>
-            MatchMagic stores certain information only on your device,
-            including:
+            MatchMagic stores only the following preferences locally on your device:
           </p>
           <ul>
-            <li>Music and sound effect preferences</li>
-            <li>Gameplay progress</li>
-            <li>App settings</li>
+            <li>Music on/off preference</li>
+            <li>Sound effects on/off preference</li>
           </ul>
           <p>
-            This information is not uploaded to MatchMagic Studio servers.
+            These preferences remain on your device and are not uploaded to MatchMagic Studio servers.
+          </p>
+          <p>
+            MatchMagic does not store gameplay progress, scores, game history, selected age levels, or child profiles.
           </p>
 
           <h2>3. Analytics and Crash Reporting</h2>
