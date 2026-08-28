@@ -161,6 +161,7 @@ button:focus-visible {
   width: min(480px, 92vw);
   height: auto;
   margin-inline: auto;
+  margin-bottom: calc(min(480px, 92vw) * -121 / 1465 + 1.75rem);
 }
 
 .site-logo {
@@ -364,7 +365,7 @@ button:focus-visible {
 }
 
 .hero__brand {
-  margin: 0 0 0.875rem;
+  margin: 0;
   line-height: 0;
 }
 
@@ -452,10 +453,6 @@ button:focus-visible {
   .hero {
     min-height: auto;
     padding-block: 1.75rem 2rem;
-  }
-
-  .hero__brand {
-    margin-bottom: 0.6875rem;
   }
 
   .hero__description {
@@ -1233,6 +1230,7 @@ main:has(.support-section:last-child) + .site-footer .site-footer__wave-wrap {
 @media (min-width: 768px) and (max-width: 1023px) {
   .matchmagic-logo--hero {
     width: min(400px, 80vw);
+    margin-bottom: calc(min(400px, 80vw) * -121 / 1465 + 1.75rem);
   }
 
   .matchmagic-logo--about {
