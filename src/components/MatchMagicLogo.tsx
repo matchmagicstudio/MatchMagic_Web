@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const LOGO_PATH = "/assets/matchmagic-logo.png";
-const LOGO_ASPECT = 1024 / 750;
+const LEGACY_LOGO_PATH = "/assets/matchmagic-logo.png";
+const HOMEPAGE_LOGO_PATH = "/assets/MatchMagic_logo - Edited.png";
+const LEGACY_LOGO_ASPECT = 1024 / 750;
+const HOMEPAGE_LOGO_ASPECT = 1465 / 1074;
 
 type MatchMagicLogoProps = {
   variant?: "header" | "hero" | "footer" | "about";
@@ -18,12 +20,15 @@ export default function MatchMagicLogo({
   const isHero = variant === "hero";
   const isFooter = variant === "footer";
   const isAbout = variant === "about";
+  const usesHomepageLogo = isHero || isAbout;
+  const logoPath = usesHomepageLogo ? HOMEPAGE_LOGO_PATH : LEGACY_LOGO_PATH;
+  const logoAspect = usesHomepageLogo ? HOMEPAGE_LOGO_ASPECT : LEGACY_LOGO_ASPECT;
   const width = isHero ? 480 : isFooter ? 168 : isAbout ? 400 : 200;
-  const height = Math.round(width / LOGO_ASPECT);
+  const height = Math.round(width / logoAspect);
 
   const image = (
     <Image
-      src={LOGO_PATH}
+      src={logoPath}
       alt="MatchMagic"
       width={width}
       height={height}
